@@ -57,6 +57,13 @@ function listaus() {
         p.innerHTML += "<a href='" + lista[i].show.officialSite + "'>Kotisivut</a>";
       }
 
+      if (lista[i].show.genres===null) {
+        console.log(lista[i].show.name + "Ei genreä")
+      } else {
+        p.appendChild(document.createElement("br"));
+        p.innerHTML += lista[i].show.genres;
+      }
+
       if (lista[i].show.summary===null) {
         console.log(lista[i].show.name + " Ei kuvausta");
       } else {
