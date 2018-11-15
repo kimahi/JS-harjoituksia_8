@@ -15,7 +15,7 @@ function vaihe1() {
 }
 */
 const xhr = new XMLHttpRequest();
-                                                                  // Lähetetään pyyntö
+                                                                  
 
 function hae() {
   const haku = document.getElementById("hakuteksti").value;
